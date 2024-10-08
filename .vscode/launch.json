@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "coreclr",
+            "request": "launch",
+            "name": "Launch API",
+            "program": "${workspaceFolder}/API/bin/Debug/net8.0/${input:programName}.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/API",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        }
+    ],
+    "inputs": [
+        {
+            "type": "promptString",
+            "id": "programName",
+            "description": "Name of the program to launch (e.g., API)"
+        }
+    ]
+}
